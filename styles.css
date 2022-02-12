@@ -13,7 +13,7 @@
 
 body {
     font-family: "Noto sans", sans-serif;
-    background-color: var(--dark);
+    background-color: var(--main-white);
 }
 /* Navbar */
 .navbar {
@@ -106,14 +106,14 @@ a:link, a:visited {
 }
 
 .exp {
-    color: var(--main-white);
+    color: var(--dark);
     padding-top: 50px;
 }
 
 .exp h1{
     font-size: 5em;
     letter-spacing: 0.3em;
-    border: 3px solid var(--main-white);
+    border: 3px solid var(--dark);
     margin-bottom: 1em;
 }
 
@@ -139,7 +139,7 @@ a:link, a:visited {
     padding-top: 5%;
     margin-top: 1%;
     width: 32%;
-    border: 1px solid var(--main-white);
+    border: 1px solid var(--dark);
     text-align: center;
 }
 
@@ -151,3 +151,5 @@ a:link, a:visited {
 .project h3 {
     font-size: 1.5em;
 }
+
+/* About me */
