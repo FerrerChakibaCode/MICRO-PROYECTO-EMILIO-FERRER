@@ -59,24 +59,42 @@ a:link, a:visited {
 
 .carousel {
     margin: auto;
-    /* width: 50%; */
+    margin-top: 0;
+    width: 100%;
+    overflow: hidden;
 }
 
 .carousel-imgs {
+    position: relative;
     padding-top: 5%;
-    width: 650px;
+    margin-left: 200px;
+    width: 1000px;
     height: 100%;
     display: flex;
+    gap: 1000px;
     align-items: center;
     /* justify-content: center; */
-    /* overflow: hidden; */
+
     
 }
 
 .carousel-imgs img {
-    width: 600px;
-    height: 100%;
+    width: 800px;
+    
     border: 5px solid black;
     object-fit: cover;
     
+}
+
+#prev {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    z-index: 3;
+}
+#next {
+    position: absolute;
+    top: 70%;
+    left: 95%;
+    z-index: 3;
 }

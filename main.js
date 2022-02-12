@@ -6,8 +6,9 @@ const nextButton = document.querySelector("#next");
 const prevButton = document.querySelector("#prev");
 
 let counter = 0;
-const size = 600;
+const size = 1777;
 // carousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
+console.log(size)
 
 nextButton.addEventListener('click', function(event){
     counter++;
