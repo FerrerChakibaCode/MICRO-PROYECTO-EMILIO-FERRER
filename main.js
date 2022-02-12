@@ -1,14 +1,11 @@
 const carousel = document.querySelector(".carousel-imgs")
 const images = document.querySelectorAll(".carousel-imgs img");
-console.log(images)
 
 const nextButton = document.querySelector("#next");
 const prevButton = document.querySelector("#prev");
 
 let counter = 0;
 const size = 1777;
-// carousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
-console.log(size)
 
 nextButton.addEventListener('click', function(event){
     counter++;
@@ -16,18 +13,15 @@ nextButton.addEventListener('click', function(event){
         counter = 0
     }
     carousel.style.transform = 'translateX(' + counter *(-size) + 'px)';
-    console.log(counter);
 })
 
 prevButton.addEventListener('click', function(event){
     counter--;
     if (counter < 0) {
         counter = images.length - 1;
-        console.log(counter);
         carousel.style.transform = 'translateX(' + counter *(-size) + 'px)';
     } else {
         carousel.style.transform = 'translateX(' + counter * -size + 'px)'; 
-        console.log(counter);
     }
 
 })
@@ -97,18 +91,53 @@ javaButton.addEventListener('click', ()=>{
 
 })
 
-// const buttonValue = document.querySelectorAll('#skills-buttons')
-// buttonValue.addEventListener('click', ()=>{
-//     document.getElementById('python-skill').innerHTML = `
-//     <div id="python-skill">
-//         <h3>SKILL: ${skillsArray[3].name}</h3>
-//         <h4>Percentage: ${skillsArray[3].skillsPercentage}</h4>
-//         <h4>Projects made: ${skillsArray[3].projectsMade}</h4>
-//     </div>`;
-// })
-// function showSkill() {
-//     const skill = document.getEleme
-// };
+// Contact me form
 
+const submitButton = document.getElementById("submit-button");
 
-// console.log('el boton es el de ' + buttonValue);
+submitButton.addEventListener('click', ()=>{
+    const viewerName = document.getElementById("form-name").value;
+    const viewerEmail = document.getElementById("form-email").value;
+    const viewerMessage = document.getElementById("form-message").value;
+    if (validateData(viewerName, viewerEmail, viewerMessage)) {
+        alert('Su solicitud ha sido enviada')
+        console.log(viewerName + '\n' + viewerEmail + '\n' + viewerMessage);
+} else {
+    alert('Por favor, ingrese bien sus datos');
+}
+    
+});
+
+const viewerName = document.getElementById("form-name").value;
+const viewerEmail = document.getElementById("form-email").value;
+const viewerMessage = document.getElementById("form-message").value;
+
+function validateData(name, email, message) {
+    if (!name || !email || !message) {
+        return false
+    } else if (!(/[a-zA-Z]/).test(name)) {
+        return false
+    } else if (!atInEmail(email) || !dotInEmail(email)) {
+        return false
+    }
+    else {
+        return true
+    }
+    
+}
+
+function dotInEmail(email) {
+    for (i = 0; i<email.length; i++){
+        if (email[i] === "."){
+            return true
+        }
+    }
+}
+
+function atInEmail(email) {
+    for (i = 0; i < email.length; i++){
+        if (email[i] === "@"){
+            return true
+        }
+    }
+}

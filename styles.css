@@ -123,7 +123,7 @@ a:link, a:visited {
     margin-bottom: 1em;
 }
 
-.inline-subtitle, .skills > h2 {
+.inline-subtitle, .skills > h2, .contact > h2 {
     font-size: 2.4em;
     /* padding-left: 5%; */
     margin: auto;
@@ -262,4 +262,20 @@ a:link, a:visited {
 
 #skill-expanded h3 {
     font-size: 2em;
+}
+
+/* Contact me */
+
+.social-media-logo {
+
+    padding: 1em;
+    width: 70px;
+}
+
+.contact h4 {
+    padding: 3em 0 0 2em;
+}
+
+.contact-me-form {
+    padding: 3em;
 }
