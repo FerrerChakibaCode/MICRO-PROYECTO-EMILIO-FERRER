@@ -15,7 +15,7 @@ body {
     font-family: "Noto sans", sans-serif;
     background-color: var(--dark);
 }
-
+/* Navbar */
 .navbar {
     position: sticky;
     top: 0;
@@ -98,3 +98,4 @@ a:link, a:visited {
     left: 95%;
     z-index: 3;
 }
+
