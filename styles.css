@@ -17,7 +17,9 @@ body {
 }
 
 .navbar {
-    padding: 1.5% 7% 1.5% 7%;
+    position: sticky;
+    top: 0;
+    padding: 1% 7% 5% 7%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -27,11 +29,14 @@ body {
     
 }
 
-.navbar > a {
-    padding: 40px 0;
+.navbar a {
+    margin-top: 40px;
     opacity: 0.8;
     text-decoration: none;
+    height: auto;
+    
 }
+
 
 .navbar > a:hover {
     opacity: 1;
@@ -42,5 +47,9 @@ a:link, a:visited {
 }
 
 #logo-navbar {
+    margin-top: 0;
+}
+
+.logo {
     height: 5em;
 }
