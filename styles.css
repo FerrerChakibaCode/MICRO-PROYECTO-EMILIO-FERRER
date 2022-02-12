@@ -7,7 +7,7 @@
 }
 
 :root {
-    --main-background: #F8F8F2;
+    --main-white: #F8F8F2;
     --dark: #282A36;
 }
 
@@ -25,7 +25,7 @@ body {
     justify-content: space-between;
     text-align: center;
     height: 50px;
-    background-color: var(--main-background);
+    background-color: var(--main-white);
     z-index: 2;
     
 }
@@ -37,7 +37,6 @@ body {
     height: auto;
     
 }
-
 
 .navbar > a:hover {
     opacity: 1;
@@ -99,3 +98,56 @@ a:link, a:visited {
     z-index: 3;
 }
 
+/* Experience */
+.center-column {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 95%;
+}
+
+.exp {
+    color: var(--main-white);
+    padding-top: 50px;
+}
+
+.exp h1{
+    font-size: 5em;
+    letter-spacing: 0.3em;
+    border: 3px solid var(--main-white);
+    margin-bottom: 1em;
+}
+
+.inline-subtitle {
+    font-size: 2.4em;
+    /* padding-left: 5%; */
+    margin: auto;
+    margin-left: 5%;
+    /* border: 1px solid white; */
+    /* display: inline; */
+}
+
+.exp-box {
+    width: 100%;
+    display: flex;
+    gap: 1%;
+    /* border: 1px solid white; */
+    margin: 0 auto;
+    padding-left: 1%;
+}
+
+.project {
+    padding-top: 5%;
+    margin-top: 1%;
+    width: 32%;
+    border: 1px solid var(--main-white);
+    text-align: center;
+}
+
+.project-img{
+    padding-top: 2em;
+    width: 95%;
+}
+
+.project h3 {
+    font-size: 1.5em;
+}
