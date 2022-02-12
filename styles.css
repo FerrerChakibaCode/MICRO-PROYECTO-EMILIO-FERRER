@@ -189,6 +189,19 @@ a:link, a:visited {
     text-align: center;
 }
 
+#about-img {
+    position: absolute;
+    width: 25%;
+    border-radius: 10%;
+    right: 10%;
+    padding-top: 20%;
+    
+}
+
+.about {
+    display: flex;
+}
+
 /* Text colors */
 .code-alike-text {
     font-size: 1em;
