@@ -19,18 +19,19 @@ body {
 .navbar {
     position: sticky;
     top: 0;
-    padding: 1% 7% 5% 7%;
+    padding: 1% 6% 5% 6%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
-    height: 100px;
+    height: 50px;
     background-color: var(--main-background);
+    z-index: 2;
     
 }
 
 .navbar a {
-    margin-top: 40px;
+    margin-top: 20px;
     opacity: 0.8;
     text-decoration: none;
     height: auto;
@@ -51,5 +52,31 @@ a:link, a:visited {
 }
 
 .logo {
-    height: 5em;
+    height: 3.8em;
+}
+
+/* Carousel */
+
+.carousel {
+    margin: auto;
+    /* width: 50%; */
+}
+
+.carousel-imgs {
+    padding-top: 5%;
+    width: 650px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* overflow: hidden; */
+    
+}
+
+.carousel-imgs img {
+    width: 600px;
+    height: 100%;
+    border: 5px solid black;
+    object-fit: cover;
+    
 }
