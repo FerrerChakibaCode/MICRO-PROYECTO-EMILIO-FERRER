@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -9,6 +10,11 @@
 :root {
     --main-white: #F8F8F2;
     --dark: #282A36;
+    --yellow: #f1fa8c; 
+    --navbar: #6272a4;
+    --pink:#FF79C6;
+    --green:#50FA7B;
+    --cyan:#8BE9FD;
 }
 
 body {
@@ -25,7 +31,7 @@ body {
     justify-content: space-between;
     text-align: center;
     height: 50px;
-    background-color: var(--main-white);
+    background-color: var(--navbar);
     z-index: 2;
     
 }
@@ -153,3 +159,58 @@ a:link, a:visited {
 }
 
 /* About me */
+
+.yellow-box {
+    position: relative;
+    height: 30em;
+    width: 40%;
+    background-color: var(--yellow);
+    margin-top: 10%;
+    margin-left: 10%;
+
+}
+
+.blue-box {
+    position: absolute;
+    left:10px;
+    height: 30em;
+    width: 100%;
+    background-color: var(--dark);
+    margin-top: 10%;
+    margin-left: 10%;
+    font-family: 'Courier Primer', monospace;
+}
+
+.blue-box h2 {
+    font-size: 2.4em;
+    color: var(--main-white);
+    margin-top: 7%;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+/* Text colors */
+.code-alike-text {
+    font-size: 1em;
+    color: var(--main-white);
+    padding-left: 2em;
+    padding-right: 2em;
+    line-height: 2.4em;
+}
+
+.pink-text {
+    color: var(--pink);
+}
+
+.green-text {
+    color: var(--green);
+}
+
+.blue-text {
+    color: var(--cyan)
+}
+
+.yellow-text {
+    color: var(--yellow)
+}
+
