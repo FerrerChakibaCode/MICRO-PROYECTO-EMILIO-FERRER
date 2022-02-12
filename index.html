@@ -5,10 +5,126 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Emilio Ferrer</title>
+    <link rel="shortcut icon" href="./img/EF-black.svg" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+
+<!-- Navbar -->    
+<nav class="navbar"> <!-- First branch worked: develop/navbar -->
+    <a href="#" id="logo-navbar"><img src="./img/EF-black.svg" alt="Home" class = "logo"></a>
+    <a href="#hero-div">HERO</a>    
+    <a href="#exp-div">EXP</a>
+    <a href="#about-div">ABOUT</a>
+    <a href="#skills-div">SKILLS</a>
+    <a href="#contact-div">CONTACT</a>
+</nav>
+
+<!-- Hero: carousel -->
+<div class="hero" id="hero-div"> <!-- Second branch worked: develop/hero -->
+    <button id="prev">←</button>
+    <button id="next">→</button>
+    <div class="carousel">
+        <div class="carousel-imgs" id="carousel-imgs">
+            <img src="./img/img1.jpg" alt="First personal photo">
+            <img src="./img/img2.JPG" alt="Graduation pic">
+            <img src="./img/img3.jpg" alt="Photo with Henry D'Arthenay">
+        </div>
+    </div>
+</div>
+
+<!-- Experience -->
+<div class="exp" id = "exp-div"> <!--Third branch worked: develop/experience -->
+    <h1 class = "center-column" id="experience-title">EMILIO FERRER</h1>
+    <div class="inline-subtitle">
+        <h2>Experience</h2>
+        <img src="./img/expbar.png" alt="" width="200px" id="exp-bar">
+    </div>
+    <div class="exp-box">
+        <div class= 'project'>
+            <h3><em>escape room</em></h3><br>            
+            <p>tech: python <br>
+            date: 5 Apr 2021 <br></p>
+            <a href="https://github.com/FerrerChakibaCode/Ferrer-Emilio-2021-2"><img src="./img/projectpython.png" alt="" class="project-img"></a>
+        </div>
+        <div class= 'project'>
+            <h3><em>personal portfolio</em></h3><br>            
+            <p>tech: html + css <br>
+            date: august 2020 <br></p>
+            <a href="https://ferrerchakibacode.github.io/lemilio.github.io/"><img src="./img/cvproject.png" alt="" class="project-img"></a>
+        </div>
+        <div class= 'project'>
+            <h3><em>basic java data structure exercise</em></h3><br>
+            <p>tech: java + netbeans <br>
+            date: july 2021 <br>
+            </p>
+            <a href="https://github.com/FerrerChakibaCode/"><img src="./img/projectjava.jpeg" alt="" class="project-img"></a>
+        </div>
+
+    </div>
+</div>
+
+<!-- About me -->
+<div class="about" id = "about-div"> <!--Fourth branch worked: develop/about -->
+    <div class="yellow-box">
+        <div class="blue-box">
+            <h2>about me</h2>
+            <section class="code-alike-text">
+                <p><span class="pink-text"> const </span> <span class="green-text"> me </span> <span class="pink-text">= </span> { <br>
+                    <span class="blue-text">  &emsp;&emsp;name</span>: <span class="yellow-text">"Emilio Ferrer"</span>, <br>
+                    <span class="blue-text">  &emsp;&emsp;shortTermGoal</span>: <span class="yellow-text"> "Land a job in web development (backend)"</span>, <br>
+                    <span class="blue-text">&emsp;&emsp;longTermGoal</span>: <span class="yellow-text"> "Escape Venezuela and do some road cycling races"</span>, <br>
+                    <span class="blue-text"> &emsp;&emsp;motivations</span>: [], <br>
+                    <span class="blue-text"> &emsp;&emsp;likesAndHobbies</span>: [<span class="yellow-text"> "Cycling"</span>, <span class="yellow-text"> "Surfskate (carving)"</span>]}</p> <br>
+            </section>
+        </div>
+    </div>
+    <img src="./img/cycling.jpeg" alt="" id="about-img">
+</div>
+
+<!-- Skills -->
+<div class="skills" id = "skills-div"> <!-- Fifth branch worked: develop/skills-->
+    <h2>S k i l l s</h2>
+    <h3>(Click on my skill that you want to see)</h3>
+    <div class="skill-buttons">
+        <button class="skill-button" id="html-button">HTML</button>
+        <button class="skill-button" id="css-button">CSS</button>
+        <button class="skill-button" id="javascript-button">JAVASCRIPT</button>
+        <button class="skill-button" id="python-button" onclick="showSkill()">PYTHON</button>
+        <button class="skill-button" id="java-button">JAVA</button>
+    </div>
+    <div id="skill-expanded"></div>
+
+
+
+</div>
+
+<!-- Contact -->
+<div class="contact" id="contact-div"> <!-- Sixth branch worked: develop/contact-->
+
+    <h2>Contact me</h2>
+
+    <form class="contact-me-form">
+        <label for="name">Full name:</label> <br>
+        <input type="text" name = "full-name" id="form-name"> <br>
+        
+        <label for="email">Email:</label><br>
+        <input type="text" name="email" id="form-email"> <br>
+
+        <label for="message">Type your message:</label> <br>
+        <input type="text" name="message" id="form-message"> <br>
+        <input type="button" value="Submit" id="submit-button">
+    </form>
+
+    <div class="social-media">
+        <h4>Redes sociales:</h4>
+        <a href="https://instagram.com/ferrerchakiba/" target="_blank"> <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="" class="social-media-logo"></a>
+        <a href="https://twitter.com/estebanban69" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/1200px-Twitter-logo.svg.png" alt="" class="social-media-logo"></a>
+        <a href="https://wa.me/584242729620" target="_blank"></a> <img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c543.png" alt="" class="social-media-logo">
+    </div>
+
+</div>
+
 
 <script src="./main.js"></script>
 </body>
